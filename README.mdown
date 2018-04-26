@@ -1,6 +1,7 @@
 # Deep CNN Vehicle Driving
+Trained and implemented Nvidia's Deep "End to End" Learning Convolutional Neural Network on a cusom built Python Flask Server in order to autonomously drive vehicles in Udacity's open source car simulator with a near 0% crash rate. 
 
-Trained and implemented Nvidia's Deep "End to End" Learning Convolutional Neural Network on a cusom built Python Flask Server in order to autonomously drive vehicles in Udacity's open source car simulator with a near 0% crash rate.
+Check out Deep CNN Vehicle Driving Paper for more detailed information on the methods and results!
 
 ## Getting Started
 

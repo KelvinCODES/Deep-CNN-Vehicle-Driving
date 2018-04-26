@@ -1,0 +1,36 @@
+# Deep CNN Vehicle Driving
+
+Trained and implemented Nvidia's Deep "End to End" Learning Convolutional Neural Network on a cusom built Python Flask Server in order to autonomously drive vehicles in Udacity's open source car simulator with a near 0% crash rate.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+You will need anaconda with conda installed on your system.
+
+### Installing
+In the source directory, type conda env create -f environment.yml in terminal
+
+Before running, type source activate selfdrive in console
+
+## Running the tests
+(Note, all tests were run on the mac version of the simulator)
+
+To begin the simulation,
+
+1) Download the car simulator from Udacity's github page, https://github.com/udacity/self-driving-car-sim 
+
+2) Open the Car Simulator for your operating system and select automation mode
+
+3) In terminal, type python test.py model-10laps.h5 
+
+
+#### Extra Notes
+- train.py is used to create a model object with the can architecture described in our report. Each epoch during training is paired with a validation score. A new model with .h5 extension is create if the current model is better than current best model.
+
+- test.py is a file that loads a model and connects to Udacity’s car simulator to send steering commands to the car.
+
+- helpers.py is a file that contains helper functions including random_flip(), which is used for augmenting the original data. It also contains batch_generator() which is used in train.py.
+
+- model-1lap.h5, model-5laps.h5 and model-10laps.h5 are pretrained models
